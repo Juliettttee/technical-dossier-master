@@ -2,19 +2,34 @@
 
 A bilingual-first Codex Skill for producing rigorous, source-traceable technical dossiers across engineering, architecture, science, manufacturing, software/AI systems and product due diligence.
 
-The Skill combines an adaptive discovery interview, a user-approved research brief and outline, iterative evidence gathering, claim-level verification, source-linked figures, transparent uncertainty and publication-quality PDF QA. It is designed to refuse unsupported precision rather than turn weak evidence into polished fiction.
+The Skill combines a cost-aware research-depth gate, an adaptive discovery interview, a user-approved research brief and outline, iterative evidence gathering, claim-level verification, source-linked figures, transparent uncertainty and publication-quality PDF QA. It is designed to refuse unsupported precision rather than turn weak evidence into polished fiction.
 
 中文说明见 [README-安装说明.md](README-安装说明.md).
 
 ## Core workflow
 
-1. **Adaptive Discovery Interview** — asks 2–3 focused questions per round until the real decision, audience and technical boundaries are clear.
-2. **Research Brief** — records the object, key questions, audience, inclusions, exclusions, evidence standard and unresolved assumptions.
-3. **Mandatory Outline Approval** — presents an editable, numbered research outline. Final PDF production is blocked until the user explicitly approves it.
-4. **Iterative Deep Research** — searches primary engineering sources first and maps which apparently independent sources share the same origin.
-5. **Evidence Verification** — maintains source, evidence, figure and claim-audit records with precise locators and explicit uncertainty grades.
-6. **Technical Synthesis** — separates verified facts, vendor claims, calculations, estimates, contradictions and unknowns.
-7. **Professional Production and QA** — renders and visually inspects the final PDF, checks citations, figures, links, units, fonts and cold-reader comprehension.
+1. **Research Depth Gate** — starts every new task by offering Light, Standard and Professional modes; Light is the default and the Skill never silently upgrades.
+2. **Adaptive Discovery Interview** — asks 2–3 focused questions per round until the real decision, audience and technical boundaries are clear.
+3. **Research Brief** — records the object, key questions, audience, inclusions, exclusions, evidence standard and unresolved assumptions.
+4. **Mandatory Outline Approval** — presents an editable, numbered research outline. Final PDF production is blocked until the user explicitly approves it.
+5. **Iterative Deep Research** — searches primary engineering sources first and maps which apparently independent sources share the same origin at the selected depth.
+6. **Evidence Verification** — maintains evidence records appropriate to the selected mode.
+7. **Technical Synthesis** — separates verified facts, vendor claims, calculations, estimates, contradictions and unknowns.
+8. **Professional Production and QA** — renders and visually inspects PDFs, checks citations, figures, links, units, fonts and cold-reader comprehension.
+
+Online evidence is always presented as a visible, descriptive, clickable link near the claim it supports. PDFs also verify the hyperlink annotations and targets; a source list alone is not considered sufficient.
+
+## Research Depth Modes
+
+Every new research task begins with one choice:
+
+| Mode | Best for | Typical output | Research/QA intensity |
+|---|---|---|---|
+| **Light / 轻量** | First-pass judgement | Concise answer or roughly 1–3 pages; no PDF by default | A few decisive sources, one research pass, compact source list |
+| **Standard / 中量** | Engineering, procurement or product decision | Structured report, roughly 6–12 pages; PDF optional | Targeted primary research, key-claim evidence and conflict log |
+| **Professional / 专业** | Due diligence, formal client or high-consequence work | Full dossier and supporting ledgers | Multi-pass research, complete audit trail, figures and full PDF QA |
+
+Light is the recommended default. You can upgrade later without repeating completed work. Asking for a PDF changes the format, not the research depth; every final PDF still requires outline approval.
 
 ## Automatic Resource Discovery & On-Demand Ingestion
 
@@ -86,7 +101,8 @@ Start a new Codex conversation and invoke:
 
 ```text
 Use $technical-dossier-master. I want to investigate [topic].
-Interview me first, then submit a Research Brief and detailed outline for approval.
+Ask me to choose Light, Standard or Professional depth first.
+Then interview me and submit a Research Brief and detailed outline for approval.
 Do not generate the PDF yet.
 ```
 
@@ -95,7 +111,7 @@ Chinese example:
 ```text
 使用 $technical-dossier-master。
 我想研究一个工程系统，重点是结构、材料、受力和实施。
-请先按 Adaptive Discovery Interview 访谈我；需求明确后提交 Research Brief 和详细大纲，等待我批准。现在不要生成 PDF。
+请先让我选择轻量、中量或专业模式，再按 Adaptive Discovery Interview 访谈我；需求明确后提交 Research Brief 和详细大纲，等待我批准。现在不要生成 PDF。
 ```
 
 The Skill accepts Chinese, English and mixed-language projects. Original titles, standards, identifiers, product codes, units and figure labels remain in their source language.
@@ -190,3 +206,4 @@ Calculations must publish their equations, inputs, units, assumptions and source
 ## Licence
 
 No open-source licence has been granted yet. The repository is publicly viewable, but copyright permissions remain reserved unless a licence is added later.
+
