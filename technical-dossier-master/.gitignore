@@ -1,0 +1,19 @@
+# Never publish local reference files or machine-specific overrides
+resource-packs/**/sources/*
+!resource-packs/**/sources/.gitkeep
+resource-packs/**/pack.local.json
+# Resource files may live anywhere below a pack, not only sources/.
+# Keep manifests and placeholders public; ignore all other pack payloads.
+resource-packs/**/*
+!resource-packs/**/
+!resource-packs/**/pack.json
+!resource-packs/**/README.md
+!resource-packs/**/.gitkeep
+# Rebuildable local discovery/index state must never be published.
+resource-packs/.resource-index.json
+resource-packs/.resource-index.json.tmp
+resource-packs/**/pack.local.example.json
+# Local reports and scratch output
+__pycache__/
+*.pyc
+.DS_Store

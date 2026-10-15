@@ -1,0 +1,25 @@
+# Local/editor state
+.idea/
+.vscode/
+*.tmp
+*.log
+
+# Private Resource Pack payloads and rebuildable indexes
+technical-dossier-master/resource-packs/**/*
+!technical-dossier-master/resource-packs/**/
+!technical-dossier-master/resource-packs/**/pack.json
+!technical-dossier-master/resource-packs/**/README.md
+!technical-dossier-master/resource-packs/**/.gitkeep
+technical-dossier-master/resource-packs/**/pack.local.json
+technical-dossier-master/resource-packs/**/pack.local.example.json
+technical-dossier-master/resource-packs/.resource-index.json
+technical-dossier-master/resource-packs/.resource-index.json.tmp
+
+# Generated caches and deliverables
+**/__pycache__/
+*.pyc
+technical_dossier.pdf
+sources.csv
+evidence_ledger.csv
+figure_register.csv
+research_gaps.md

@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "electronics",
+  "title": "Electronics / 电子工程",
+  "description": "Optional user-maintained evidence library; sources are not bundled.",
+  "domains": [
+    "electronics",
+    "semiconductors"
+  ],
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "source_dirs": [
+    "sources"
+  ],
+  "external_paths": [],
+  "status": "optional"
+}

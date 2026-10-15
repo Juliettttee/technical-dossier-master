@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "id": "water-features",
+  "title": "Water Features / 水景",
+  "description": "Optional user-maintained evidence library; sources are not bundled.",
+  "domains": [
+    "water features",
+    "fountain engineering",
+    "water systems"
+  ],
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "source_dirs": [
+    "sources"
+  ],
+  "external_paths": [],
+  "status": "optional"
+}

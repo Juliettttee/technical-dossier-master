@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "architecture",
+  "title": "Architecture / 建筑",
+  "description": "Optional user-maintained evidence library; sources are not bundled.",
+  "domains": [
+    "architecture",
+    "structural engineering"
+  ],
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "source_dirs": [
+    "sources"
+  ],
+  "external_paths": [],
+  "status": "optional"
+}
