@@ -18,8 +18,12 @@ technical-dossier-master/resource-packs/.resource-index.json.tmp
 # Generated caches and deliverables
 **/__pycache__/
 *.pyc
+/output/
+/research/
+/tmp/
 technical_dossier.pdf
 sources.csv
 evidence_ledger.csv
 figure_register.csv
 research_gaps.md
+
