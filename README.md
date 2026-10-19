@@ -2,7 +2,7 @@
 
 A bilingual-first Codex Skill for producing rigorous, source-traceable technical dossiers across engineering, architecture, science, manufacturing, software/AI systems and product due diligence.
 
-The Skill combines a cost-aware research-depth gate, an adaptive discovery interview, a user-approved research brief and outline, iterative evidence gathering, claim-level verification, source-linked figures, transparent uncertainty and publication-quality PDF QA. It is designed to refuse unsupported precision rather than turn weak evidence into polished fiction.
+The Skill combines a cost-aware research-depth gate, an adaptive discovery interview, a user-approved research brief and outline, iterative evidence gathering, claim-level verification, source-linked figures, transparent uncertainty and publication-quality PDF QA. It also provides a Compact Engineering Note preset for concise, answer-first, visually led reports without weakening the evidence standard. It is designed to refuse unsupported precision rather than turn weak evidence into polished fiction.
 
 中文说明见 [README-安装说明.md](README-安装说明.md).
 
@@ -30,6 +30,18 @@ Every new research task begins with one choice:
 | **Professional / 专业** | Due diligence, formal client or high-consequence work | Full dossier and supporting ledgers | Multi-pass research, complete audit trail, figures and full PDF QA |
 
 Light is the recommended default. You can upgrade later without repeating completed work. Asking for a PDF changes the format, not the research depth; every final PDF still requires outline approval.
+
+## Output Formats
+
+Research depth and document format are independent choices:
+
+| Format | Intended use | Typical form |
+|---|---|---|
+| **Chat Answer** | Immediate technical answer | Conversation only |
+| **Compact Engineering Note / 简洁证据型工程说明** | Client brief, technical provenance, mechanism explanation or bounded engineering decision | Answer-first, normally 4-10 A4 pages with 2-6 decision-critical figures |
+| **Full Technical Dossier / 完整技术档案** | Detailed due diligence and formal technical records | Comprehensive report with mode-appropriate registers and appendices |
+
+`Light + PDF` defaults to the Compact Engineering Note. It uses question-led headings, visible evidence-status labels, claim-adjacent clickable sources, and clearly distinguishes evidence figures, analytical redraws and conceptual illustrations. Outline approval remains mandatory.
 
 ## Automatic Resource Discovery & On-Demand Ingestion
 
@@ -206,4 +218,5 @@ Calculations must publish their equations, inputs, units, assumptions and source
 ## Licence
 
 No open-source licence has been granted yet. The repository is publicly viewable, but copyright permissions remain reserved unless a licence is added later.
+
 
